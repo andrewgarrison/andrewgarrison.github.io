@@ -12,20 +12,45 @@
 </head>
 <body>  
 <div id = "container">
-  <header>
-    <div id = "header-content">
-        <a id="return" href="MyWebsite.html"> Andrew Garrison </a>
-    <div id="nav">
-       <ul>
+<header>
+<span class="toggle">
+<a id="menu-icon"><img id="navOpacity" src="Images/NavIcon.png"></a>
+</span>
+<nav>
+<div id = "header-content">
+        <a id="return" href="index.html"> Andrew Garris </a> 
+        <div id="nav">
+  <ul>
     <li id="bye1"><a id="blue" href="About.html" class="current">About</a></li>
     <li id="bye2"><a id="green" href="Projects.html">Projects</a></li>
     <li id="bye3"><a id="orange" href="Blog.html">Blog</a></li>
     <li id="bye4"><a id="yellow" href="Resume.html">Resume</a></li>
-      <li id="bye5"><a id="grey" href="Contact.html">Contact</a></li>
-      </ul>
-    </div>
-    </div>
-  </header>
+    <li id="bye5"><a id="grey" href="Contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+<script>
+$(document).ready(function() {
+    // trigger the function when clicking on an assigned element
+    $("#menu-icon").click(function() {
+      $("#nav").toggle("25ms");
+    });
+$(window).resize(function(){
+
+       if ($(window).width() >= 1055) {  
+
+          $("#nav").show();
+
+       } else {
+        
+          $("#nav").hide();
+       
+       }
+});
+});
+</script>
+</header>
     <body>
     <div class="strengthsBox">
       <form> 
