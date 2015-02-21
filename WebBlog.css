@@ -116,12 +116,13 @@ a {
   position: relative;
   top: 700px;
   background: white;
-  height: 1000px;
+  height: 10%;
 }
 .content h1 {
   font-family: 'Abel', sans-serif;
   color: #424242;
   font-size: 40px;
+  width: 100%;
 }
 .content h2 {
   font-family: sans-serif, helvetica;
@@ -145,17 +146,18 @@ a {
 }
 #Query {
   position: relative;
-  bottom: 170px;
-}
+ }
 
 #Queryp {
-  width: 95%;
-  bottom: 150px;
+  width: 85%;
+  bottom: 50px;
 }
 #Query h2 {
   width: 100%;
   color: #77C0FC;
-  margin-bottom: 160px;
+  padding-top: 20px;
+  bottom: 30px;
+  position: relative;
 }
 #Myself {
   position: relative;
@@ -164,9 +166,12 @@ a {
 #Myself h2 {
   color: green;
   width: 100%;
+  top: 250px;
+  position: relative;
 }
 #Myself p {
-  width: 95%;
+  width: 90%;
+  top: 250px;
 }
 #strength {
   position: relative;
@@ -174,8 +179,8 @@ a {
   right: 35%;
 }
 .content2 {
-  height: 750px;
-  top: 550px;
+  height: 10%;
+  top: 750px;
   position: relative;
   background: white;
   width: 80%;
@@ -200,8 +205,8 @@ a {
 }
 
 .content3 {
-  height: 725px;
-  top: 550px;
+  height: 10%;
+  top: 800px;
   position: relative;
   background: white;
   width: 80%;
@@ -233,15 +238,15 @@ a {
   position: relative;
 }
 #content3p {
-  width: 95%;
+  width: 90%;
 }
 .content3 h2 {
   font-family: 'Abel', sans-serif;
   color: #EDED37;
 }
 .content4 {
-  height: 775px;
-  top: 550px;
+  height: 10%;
+  top: 850px;
   position: relative;
   background: white;
   width: 80%;
@@ -253,7 +258,7 @@ a {
   color: #424242;
 }
 .content4 p {
-  width: 95%;
+  width: 90%;
   margin-right: 20%;
   font-family: sans-serif, helvetica;
   font-size: 20px;
@@ -263,11 +268,12 @@ a {
   position: relative;
 }
 .content4 img {
-
+width: 90%;
+height: 90%;
 }
 .content5 {
-  height: 775px;
-  top: 550px;
+  height: 10%;
+  top: 900px;
   position: relative;
   background: white;
   width: 80%;
@@ -279,7 +285,7 @@ a {
   color: #424242;
 }
 .content5 p {
-  width: 95%;
+  width: 90%;
   margin-right: 20%;
   font-family: sans-serif, helvetica;
   font-size: 20px;
@@ -288,9 +294,13 @@ a {
   text-align: left;
   position: relative;
 }
+.content5 img {
+	width: 50%;
+	height: 50%;
+}
 .content6 {
-  height: 1100px;
-  top: 550px;
+  height: 10%;
+  top: 950px;
   position: relative;
   background: white;
   width: 80%;
@@ -302,7 +312,7 @@ a {
   color: #424242;
 }
 .content6 p {
-  width: 95%;
+  width: 90%;
   margin-right: 20%;
   font-family: sans-serif, helvetica;
   font-size: 20px;
@@ -312,7 +322,8 @@ a {
   position: relative;
 }
 #scratch {
-  width: 95%;
+  width: 90%;
+  height: 90%
   margin-right: 20%;
   font-family: sans-serif, helvetica;
   font-size: 18px;
@@ -321,7 +332,96 @@ a {
   text-align: center;
   position: relative;
 }
-@media (max-width: 1120px) {
+#game {
+	overflow: none;
+	background: transparent;
+}
+/*MAIN*/
+
+
+
+#menu-icon {
+
+	display: none;
+	float: right;
+	left: 85%;
+	top: 0px;
+	position: fixed;
+	padding: none;
+}
+
+img {
+  padding: 8px;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 1065px) {
+
+
+	#menu-icon {
+    top: 5px;
+		display: block;
+		cursor: pointer;
+	}
+  #nav {
+    display: none;
+  }
+  #navOpacity {
+    height: 25px;
+    width: 35px;
+    opacity: 1;
+    transition: 200ms ease-out;
+    -webkit-transition: 200ms ease-out;
+    -moz-transition: 200ms ease-out;
+    -o-transition: 200ms ease-out;
+  }
+  #navOpacity:hover {
+    opacity: 0.7;
+    transition: 200ms ease-out;
+    -webkit-transition: 200ms ease-out;
+    -moz-transition: 200ms ease-out;
+    -o-transition: 200ms ease-out;
+  }
+	
+	nav ul, nav:active ul { 
+
+		 position: fixed;
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    right: 0px;
+    top: 44px;
+    width: 25%;
+    border-radius: 0px 0 4px 4px;
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+	#return {
+  float: left;
+  font-size: 26px; text-transform: uppercase; letter-spacing: 6px;
+  font-family: 'Abel', sans-serif;
+  color: black;
+  margin-left: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  width: 300px;
+  padding: 0px;
+  margin-top: 15px;
+  transition: none;
+}
+}
+/*@media (max-width: 1120px) {
   li {
     display: inline-block;
     padding: none;

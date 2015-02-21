@@ -176,7 +176,93 @@ label {
 #myForm {
 	padding-left: 10px;
 }
-@media (max-width: 1120px) {
+#menu-icon {
+
+  display: none;
+  float: right;
+  left: 85%;
+  top: 0px;
+  position: fixed;
+  padding: none;
+}
+
+#navOpacity {
+  padding: 8px;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 1065px) {
+
+
+  #menu-icon {
+
+    display: block;
+    top: 5px;
+    cursor: pointer;
+  }
+  #nav {
+    display: none;
+  }
+  #navOpacity {
+    height: 25px;
+    width: 35px;
+    opacity: 1;
+    transition: 200ms ease-out;
+    -webkit-transition: 200ms ease-out;
+    -moz-transition: 200ms ease-out;
+    -o-transition: 200ms ease-out;
+  }
+  #navOpacity:hover {
+    opacity: 0.7;
+    transition: 200ms ease-out;
+    -webkit-transition: 200ms ease-out;
+    -moz-transition: 200ms ease-out;
+    -o-transition: 200ms ease-out;
+  }
+  
+  nav ul, nav:active ul { 
+
+    position: fixed;
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    right: 0px;
+    top: 44px;
+    width: 25%;
+    border-radius: 0px 0 4px 4px;
+  }
+
+  nav li {
+
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+
+  }
+  #return {
+  float: left;
+  font-size: 26px; text-transform: uppercase; letter-spacing: 6px;
+  font-family: 'Abel', sans-serif;
+  color: black;
+  margin-left: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  width: 300px;
+  padding: 0px;
+  margin-top: 15px;
+  transition: none;
+}
+@media only screen and (max-width : 620px) {
+  #content2 .social {
+    width: 50%;
+  }
+}
+/*@media (max-width: 1120px) {
   li {
     display: inline-block;
     padding: none;

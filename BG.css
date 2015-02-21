@@ -89,7 +89,7 @@ a {
   width: 100%;
   height: 100%; 
   background-repeat: no-repeat;
-  background-image: url("Images/BGPic.jpeg");
+  background-image: url("Images/BGpic.jpeg");
   position: absolute;
   background-size: cover;
 }
