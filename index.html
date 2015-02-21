@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="Script.js"></script>
+  <link href ="Main.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Abel|Dosis:300,400,700' rel='stylesheet' type='text/css'>
+  <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<title>
+  AG | Home
+</title>
+</head>
+<body>  
+<header>
+<span class="toggle">
+<a id="menu-icon"><img id="navOpacity" src="Images/NavIcon.png"></a>
+</span>
+<nav>
+<div id = "header-content">
+        <a id="return" href="MyWebsite.html"> Andrew Garrison </a> 
+        <div id="nav">
+  <ul>
+    <li id="bye1"><a id="blue" href="About.html" class="current">About</a></li>
+    <li id="bye2"><a id="green" href="Projects.html">Projects</a></li>
+    <li id="bye3"><a id="orange" href="Blog.html">Blog</a></li>
+    <li id="bye4"><a id="yellow" href="Resume.html">Resume</a></li>
+    <li id="bye5"><a id="grey" href="Contact.html">Contact</a></li>
+    </ul>
+  </div>
+<div>
+</nav>
+<script>
+$(document).ready(function() {
+    // trigger the function when clicking on an assigned element
+    $("#menu-icon").click(function() {
+      $("#nav").toggle("25ms");
+    });
+$(window).resize(function(){
+
+       if ($(window).width() >= 1055) {  
+
+          $("#nav").show();
+
+       } else {
+        
+          $("#nav").hide();
+       
+       }
+});
+});
+</script>
+</header>
+  <div id ="banner">
+      <h2> Home </h2>
+  </div>
+  <div id ="content">
+      <p> My name is Andrew Garrison, i'm an 18 year old high school student and this is my website!<br>
+        Be sure to check out the different tabs at the top to learn more about me, or to contact me. <br></br>
+        Thank You! 
+      </p>
+        
+  </div>
+  <div id="content2">
+    <h3>Lets Be Friends
+    </h3>
+    <div id="animate">
+      <ul id="socialIcons">
+         <li class="social" id="twit"><a href="https://twitter.com/Andrew_Garrison" target="_blank"><img src="Images/twiticon.png" height="50px" width="50px"></li></a>
+        <li class="social" id="insta"><a href="http://instagram.com/andrew_garrison/" target="_blank"><img src="Images/instaicon.png" height="50px" width="50px"></li></a>
+        <li class="social" id="snap"><a href="#popup-box" class="popup-window"><img src="Images/snapicon.png" height="50px" width="50px"></li></a>
+      </ul>
+      <div id="popup-box" class="popupInfo">
+
+        <form>
+          <img src="Images/iPhone.png" height ="570px" width="355px">
+          <br>
+          <button type="button" class="close"> Close </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div> 
+</body>
+</html>
