@@ -1,0 +1,41 @@
+ul.highlight {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul.highlight li {
+  display: inline-block;
+  height: 325px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 335px;
+  border-bottom: none;
+  float: none;
+  vertical-align: middle;
+  left: 0;
+}
+span.text {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 325px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 335px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+span.text span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+ul.highlight li:hover span.text {
+  opacity: 1;
+}

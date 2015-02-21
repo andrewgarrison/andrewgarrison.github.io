@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="Script.js"></script>
+  <link href ="BG.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Abel' rel='stylesheet' type='text/css'>
+<title>
+  AG | Background
+</title>
+</head> 
+<div id = "container">
+<body>
+<header>
+<span class="toggle">
+<a id="menu-icon"><img id="navOpacity" src="Images/NavIcon.png"></a>
+</span>
+<nav>
+<div id = "header-content">
+        <a id="return" href="MyWebsite.html"> Andrew Garrison </a> 
+        <div id="nav">
+	<ul>
+		<li id="bye1"><a id="blue" href="About.html" class="current">About</a></li>
+		<li id="bye2"><a id="green" href="Projects.html">Projects</a></li>
+		<li id="bye3"><a id="orange" href="Blog.html">Blog</a></li>
+		<li id="bye4"><a id="yellow" href="Resume.html">Resume</a></li>
+		<li id="bye5"><a id="grey" href="Contact.html">Contact</a></li>
+  	</ul>
+	</div>
+<div>
+</nav>
+<script>
+$(document).ready(function() {
+    // trigger the function when clicking on an assigned element
+    $("#menu-icon").click(function() {
+      $("#nav").toggle("25ms");
+    });
+$(window).resize(function(){
+
+       if ($(window).width() >= 1055) {  
+
+          $("#nav").show();
+
+       } else {
+        
+          $("#nav").hide();
+       
+       }
+});
+});
+</script>
+</header>
+  <div id ="banner">
+ <div class="info">
+   <h1> Background </h1>
+	 <p> I'm 18 years old and I reside in Omaha, Nebraska. Ever since I was a young teenager I have always had a love for computers and design. Although, I did not get into web design/coding until I was a junior in high school. I started out video editing at the age of 12 and from there I moved on to 3D design, audio editing, and some photo editing. I'm by no means an expert or skilled at any of the methods I just listed, they were all done for enjoyment. This is the first website I've ever made, and I hope there will be many more to come! </p>
+	 </div>
+   </div>
+  </body>
+ </div>
+</html>

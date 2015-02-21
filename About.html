@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="AboutScript.js"></script>
+  <link href ="AboutCSS.css" rel="stylesheet">
+   <link href="css/hover.css" rel="stylesheet" media="all">
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Shadows+Into+Light|Abel|Oswald|Courgette' rel='stylesheet' type='text/css'>
+<title>
+  AG | About
+</title>
+</head>
+<body>  
+<div id = "container">
+<header>
+<span class="toggle">
+<a id="menu-icon"><img id="navOpacity" src="Images/NavIcon.png"></a>
+</span>
+<nav>
+<div id = "header-content">
+        <a id="return" href="MyWebsite.html"> Andrew Garrison </a> 
+        <div id="nav">
+  <ul>
+    <li id="bye1"><a id="blue" href="About.html" class="current">About</a></li>
+    <li id="bye2"><a id="green" href="Projects.html">Projects</a></li>
+    <li id="bye3"><a id="orange" href="Blog.html">Blog</a></li>
+    <li id="bye4"><a id="yellow" href="Resume.html">Resume</a></li>
+    <li id="bye5"><a id="grey" href="Contact.html">Contact</a></li>
+    </ul>
+  </div>
+<div>
+</nav>
+<script>
+$(document).ready(function() {
+    // trigger the function when clicking on an assigned element
+    $("#menu-icon").click(function() {
+      $("#nav").toggle("25ms");
+    });
+$(window).resize(function(){
+
+       if ($(window).width() >= 1055) {  
+
+          $("#nav").show();
+
+       } else {
+        
+          $("#nav").hide();
+       
+       }
+});
+});
+</script>
+</header>
+  <div id ="banner">
+      <h2> About </h2>
+  </div>
+  <div class="aboutMe">
+    <ul class="highlight">
+      <li>
+        <a id="edit" href="BGinfo.html">
+        <img src= "Images/AboutMe.png" height = "325px" width="335px">
+        <span class="text" id="edit"><span> Background </span></span>
+        </a>
+        </li>
+      <li>
+        <a id="edit" href="Strengths.html">
+        <img src= "http://26.media.tumblr.com/tumblr_l8pjtkQT7m1qzd1fwo1_500.jpg" height = "325px" width="335px">
+        <span class="text"><span> Strengths </span></span>
+        </a>
+        </li>
+        <li>
+        <a id="edit" href="Interests.html">
+        <img src= "https://40.media.tumblr.com/0741444e6e1d1d0e3676c4893f61a10a/tumblr_n7qa1bji3q1txcb93o1_500.jpg" height = "325px" width="335px">
+        <span class="text"><span> Hobbies </span></span>
+        </a>
+        </li>
+      </ul>
+  </div>
+</div>
+  </html>

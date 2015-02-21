@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="Contact.js"></script>
+  <link href ="ContactCSS.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Abel|Dosis:300,400,700' rel='stylesheet' type='text/css'>
+		<title> AG | Contact </title>
+
+	</head>
+	<body>
+		<div class="container">
+			<header>
+    <div id = "header-content">
+        <a id="return" href="MyWebsite.html"> Andrew Garrison </a>
+    <div id="nav">
+       <ul>
+	  <li id="bye1"><a id="blue" href="About.html">About</a></li>
+      <li id="bye2"><a id="green" href="Projects.html">Projects</a></li>
+      <li id="bye3"><a id="orange" href="Blog.html">Blog</a></li>
+	  <li id="bye4"><a id="yellow" href="Resume.html">Resume</a></li>
+      <li id="bye5"><a id="grey" href="Contact.html" class="current">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+  </header>
+  <div id="banner">
+  <div class="contactForm">
+  	<form id="myForm">
+			<h1>Contact Me</h1>
+				<form class="cmxform" id="commentForm" method="get" action="">
+    <p>
+      <label for="cname">Name</label>
+      <input id="name" name="name" minlength="2" type="text" required>
+    </p>
+    <p>
+      <label for="cemail">E-Mail</label>
+      <input id="email" type="email" name="email" required>
+    </p>
+    <p>
+      <label for="ccomment">Your comment</label>
+      <textarea id="message" name="comment" required></textarea>
+    </p>
+    <p>
+      <input class="submit" type="submit" value="Submit">
+    </p>
+</form>
+<script>
+$("#commentForm").validate();
+</script>
+			</div>
+			</div>
+			</div>
+		</body>
+		</html>

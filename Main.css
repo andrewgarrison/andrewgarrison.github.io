@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "Ostrich Sans";
+  src: url("WebFonts/ostrich-regular.ttf")
+  local('Ostrich Sans'),
+  format('truetype');
+}
+@font-face {
+  font-family: 'Bebas';
+  src: url("WebFonts/BEBAS.TTF")
+  local('Bebas'),
+  format('truetype');
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  background: white;
+  height: 60px;
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+  top: 0px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  border-bottom: 1px solid grey;
+}
+#header-content {
+  width: 100%; margin: 0 auto; padding: 5px 0 0 0;
+  overflow: hidden;
+  
+}
+#container {
+  margin-top: 230px;
+}
+#return {
+  float: left;
+  font-size: 26px; text-transform: uppercase; letter-spacing: 6px;
+  font-family: 'Abel', sans-serif;
+  color: black;
+  margin-left: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  width: 300px;
+  padding: 0px;
+  margin-top: 15px;
+  transition: none;
+}
+#nav {
+	float: right;
+}
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 23px;
+  float: left;
+  position: relative;
+  bottom: 15px;
+}
+a {
+  font-size: 16px;
+  font-family: sans-serif, 'Abel';
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  transition: 100ms ease-out;
+  -webkit-transition: 100ms ease-out;
+  -moz-transition: 100ms ease-out;
+  -o-transition: 100ms ease-out;
+}
+#orange:hover {
+  border-bottom: 4px solid #2FEB67;
+}
+#blue:hover {
+  border-bottom: 4px solid #61C8FF;
+}
+#green:hover  {
+  border-bottom: 4px solid #FFC640;
+}
+#yellow:hover {
+  border-bottom: 4px solid #FFFB00;
+}
+#grey:hover {
+  border-bottom: 4px solid #7F6887;
+}
+
+#banner {
+  top: 65px;
+  width: 100%;
+  height: 600px; 
+  background-image: url("Images/MeBanner.png");
+  position: absolute;
+  background-size: cover;
+}
+
+#banner h2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin-top: 230px;
+  color: orange;
+  text-align: center;
+}
+
+
+#content {
+  background-position: center;
+  width: 100%;
+  position: absolute;
+  top: 620px;
+  background: white;
+  height: 60%;
+  background-color: #E6E6E6;
+}
+#content p {
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
+  margin-top: 10%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  }
+  
+  #content #info {
+    font-size: 24px;
+  }
+
+#content h1 {
+  text-transform: uppercase;
+  font-family: 'Bebas', sans-serif;
+  font-size: 36px;
+  border: 2px solid black; width: 30%;
+  margin-top: 125px;
+  position: relative;
+  margin-left: 35%;
+  }
+
+#content2 {
+  background-image: url("Images/MountainFlow.png");
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  top: 1050px;
+}
+
+#content2 h3 {
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-size: 32px;
+  padding-top: 160px;
+}
+
+#content2 .social {
+    padding: 5px;
+    width: 10%;
+    float: none;
+    /*background-color: none;
+    border: 0px;
+    outline: 0px;*/
+    border-bottom: none;
+    margin-top: 30px;
+    display: inline-block;
+    list-style: none;
+    padding-right: 4%;
+    position: relative;
+    opacity: 1;
+}
+#socialIcons {
+  margin-left: 0%;
+}
+.social {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.social:hover, .social:focus, .social:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.popupInfo {
+  display: none;
+  float: left;
+  font-size: 18px;
+  position: fixed;
+  top: 50%;
+  left: 51%;
+  margin: -100px 0 0 -100px;
+  z-index: 12400;
+}
+#mask {
+  display: none;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 12300;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+#menu-icon {
+
+  display: none;
+  float: right;
+  left: 85%;
+  top: 0px;
+  position: fixed;
+  padding: none;
+}
+
+img {
+  padding: 8px;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 1065px) {
+
+
+  #menu-icon {
+
+    display: block;
+    top: 5px;
+    cursor: pointer;
+  }
+  #nav {
+    display: none;
+  }
+  #navOpacity {
+    height: 25px;
+    width: 35px;
+    opacity: 1;
+    transition: 200ms ease-out;
+    -webkit-transition: 200ms ease-out;
+    -moz-transition: 200ms ease-out;
+    -o-transition: 200ms ease-out;
+  }
+  #navOpacity:hover {
+    opacity: 0.7;
+    transition: 200ms ease-out;
+    -webkit-transition: 200ms ease-out;
+    -moz-transition: 200ms ease-out;
+    -o-transition: 200ms ease-out;
+  }
+  
+  nav ul, nav:active ul { 
+
+    position: fixed;
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    right: 0px;
+    top: 44px;
+    width: 25%;
+    border-radius: 0px 0 4px 4px;
+  }
+
+  nav li {
+
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+
+  }
+  #return {
+  float: left;
+  font-size: 26px; text-transform: uppercase; letter-spacing: 6px;
+  font-family: 'Abel', sans-serif;
+  color: black;
+  margin-left: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  width: 300px;
+  padding: 0px;
+  margin-top: 15px;
+  transition: none;
+}
+@media only screen and (max-width : 620px) {
+  #content2 .social {
+    width: 50%;
+  }
+}
