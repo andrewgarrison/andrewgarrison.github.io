@@ -146,6 +146,7 @@ a {
 }
 #Query {
   position: relative;
+  bottom: 50px;
  }
 
 #Queryp {
@@ -156,7 +157,7 @@ a {
   width: 100%;
   color: #77C0FC;
   padding-top: 20px;
-  bottom: 30px;
+  bottom: 50px;
   position: relative;
 }
 #Myself {

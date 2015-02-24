@@ -18,7 +18,9 @@
 <header>
 
 <a id="menu-icon"><img id="navOpacity" src="Images/NavIcon.png"></a>
-
+<a id="return1" href="index.html"><img src="Images/home-icon.png"></a> 
+<h5 id="webTitle">Andrew Garrison</h5>
+    <a id="mobileNav"><img src="Images/mobileNav.jpeg"></a>
 <nav>
 <div id = "header-content">
         <a id="return" href="index.html"> Andrew Garrison </a> 
@@ -36,7 +38,7 @@
 <script>
 $(document).ready(function() {
     // trigger the function when clicking on an assigned element
-    $("#menu-icon").click(function() {
+    $("#menu-icon, #mobileNav").click(function() {
       $("#nav").toggle("25ms");
     });
 $(window).resize(function(){
