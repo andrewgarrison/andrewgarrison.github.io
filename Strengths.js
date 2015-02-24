@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // trigger the function when clicking on an assigned element
+	// trigger the function when clicking on an assigned element
     $(".toggle").click(function () {
         // check the visibility of the next element in the DOM
         if ($(this).next().is(":hidden")) {
@@ -8,4 +8,5 @@ $(document).ready(function() {
             $(this).next().hide(); // hide it
         }
     });
+
 });

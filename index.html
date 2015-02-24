@@ -15,12 +15,14 @@
 </head>
 <body>  
 <header>
-<span class="toggle">
-<a id="menu-icon"><img id="navOpacity" src="Images/NavIcon.png"></a>
-</span>
 <nav>
 <div id = "header-content">
+  <a id="menu-icon"><img id="navOpacity" src="Images/NavIcon.png"></a>
+  
+    <a id="return1" href="index.html"><img src="http://www.tuxxin.com/wp-content/uploads/2013/09/home-icon.png"></a> 
+    <a id="mobileNav"><img src="Images/mobileNav.jpeg"></a>
         <a id="return" href="index.html"> Andrew Garrison </a> 
+        <h5 id="webTitle">Andrew Garrison</h5>
         <div id="nav">
   <ul>
     <li id="bye1"><a id="blue" href="About.html" class="current">About</a></li>
@@ -30,12 +32,12 @@
     <li id="bye5"><a id="grey" href="Contact.html">Contact</a></li>
     </ul>
   </div>
-</div>
+<div>
 </nav>
 <script>
 $(document).ready(function() {
     // trigger the function when clicking on an assigned element
-    $("#menu-icon").click(function() {
+    $("#menu-icon, #mobileNav").click(function() {
       $("#nav").toggle("25ms");
     });
 $(window).resize(function(){
