@@ -542,9 +542,9 @@ a {
     padding-right: 5%;
     position: relative;
     opacity: 1;
-}
+  }
 #socialIcons {
-  margin-right: 50px;
+  margin-right: 25px;
 }
 .social {
   display: inline-block;
@@ -566,11 +566,10 @@ a {
 }
 .popupInfo {
   display: none;
-  float: left
   font-size: 18px;
   position: absolute;
   top: 30%;
-  left: 50%;
+  left: 52%;
   margin: -100px 0 0 -100px;
   z-index: 12400;
 }
