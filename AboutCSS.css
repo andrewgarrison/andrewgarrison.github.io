@@ -461,10 +461,10 @@ ul.highlight {
 }
 ul.highlight li {
   display: inline-block;
-  height: 325px;
+  height: 225px;
   margin: 1 3em 3em 1;
   position: relative;
-  width: 335px;
+  width: 235px;
   border-bottom: none;
   float: none;
   vertical-align: middle;
@@ -475,17 +475,17 @@ span.text {
   color: white;
   cursor: pointer;
   display: table;
-  height: 325px;
+  height: 225px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 335px;
-  opacity: 1;
+  width: 235px;
+  opacity: 0;
   transition: opacity 500ms;
   -o-transition: opacity 500ms;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
-  border: 5px solid white;
+  border: none;
 }
 span.text span {
   display: table-cell;
@@ -496,6 +496,10 @@ span.text span {
   text-transform: uppercase;
   font-weight: bold;
   border: none;
+}
+.aboutMe img {
+  height: 225px;
+  width: 235px;
 }
 ul.highlight li:hover span.text {
   opacity: 1;
