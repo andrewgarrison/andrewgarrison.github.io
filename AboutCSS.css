@@ -453,7 +453,7 @@ a {
 ul.highlight {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   text-align: center;
   float: none;
   position: relative;
@@ -468,7 +468,8 @@ ul.highlight li {
   border-bottom: none;
   float: none;
   vertical-align: middle;
-  padding: 0;
+  padding: 0px;
+  border-bottom: 5px solid white;
 }
 span.text {
   background: rgba(0,0,0,0.5);
@@ -480,12 +481,12 @@ span.text {
   position: absolute;
   top: 0;
   width: 195px;
-  opacity: 0;
+  opacity: 0.8;
   transition: opacity 500ms;
   -o-transition: opacity 500ms;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
-  border: none;
+  border-bottom: 5px solid white;
 }
 span.text span {
   display: table-cell;
@@ -495,7 +496,7 @@ span.text span {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  border: none;
+  border-bottom: 5px solid white;
 }
 .aboutMe img {
   height: 185px;
