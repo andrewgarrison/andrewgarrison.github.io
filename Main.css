@@ -443,8 +443,8 @@ a {
     border-bottom: 1px solid grey;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
-    right: 0px;
-    top: 60px;
+    right: 1px;
+    top: 61px;
     width: 25%;
     border-radius: 0px 0 4px 4px;
     height: 175px;
@@ -463,7 +463,7 @@ a {
   top: 60px;
   width: 100%;
   height: 275px; 
-  background-image: url("http://s12.postimg.org/cjw0r8r5p/bannerpic.png");
+  background-image: url("Images/bannerpic.png");
   position: absolute;
   background-size: cover;
 }
@@ -513,7 +513,7 @@ a {
   }
 
 #content2 {
-  background-image: url("http://s24.postimg.org/d9k4xvo79/Mountain_Flow.png");
+  background-image: url("Images/MountainFlow.png");
   background-size: cover;
   position: absolute;
   height: 500px;

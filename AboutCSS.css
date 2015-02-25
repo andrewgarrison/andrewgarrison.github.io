@@ -134,10 +134,7 @@ a {
   text-align: middle;
   width: 100%;
 }
-.aboutMe h1 {
-  font-size: 0px;
-  font-family: 'Courgette', cursive;
-}
+
 ul.highlight {
   list-style-type: none;
   margin: 0;
@@ -411,8 +408,8 @@ a {
     border-bottom: 1px solid grey;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
-    right: 0px;
-    top: 60px;
+    right: 1px;
+    top: 61px;
     width: 25%;
     border-radius: 0px 0 4px 4px;
     height: 175px;
@@ -428,7 +425,7 @@ a {
 
   }
   #banner {
-  top: 65px;
+  top: 60px;
   width: 100%;
   max-width: auto;
   max-height: auto;
@@ -444,4 +441,63 @@ a {
   letter-spacing: 5px;
   margin-top: 110px;
   text-align: center;
+}
+.aboutMe {
+  top: 100px;
+  position: relative;
+  height: 500px;
+  text-align: middle;
+  width: 100%;
+}
+
+ul.highlight {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  float: none;
+  position: relative;
+  top: 25px;
+}
+ul.highlight li {
+  display: inline-block;
+  height: 325px;
+  margin: 1 3em 3em 1;
+  position: relative;
+  width: 335px;
+  border-bottom: none;
+  float: none;
+  vertical-align: middle;
+  padding: 0;
+}
+span.text {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 325px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 335px;
+  opacity: 1;
+  transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  border: 5px solid white;
+}
+span.text span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+ul.highlight li:hover span.text {
+  opacity: 1;
+  float: none;
 }
