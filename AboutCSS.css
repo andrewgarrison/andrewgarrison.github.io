@@ -408,9 +408,9 @@ a {
     border-bottom: 1px solid grey;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
-    right: 1px;
+    padding-right: 1px;
     top: 61px;
-    width: 25%;
+    width: 30%;
     border-radius: 0px 0 4px 4px;
     height: 175px;
     float: right;
@@ -418,7 +418,7 @@ a {
 
   nav li {
 
-    text-align: center;
+    text-align: middle;
     width: 100%;
     padding: 10px 0;
     margin: 0;
