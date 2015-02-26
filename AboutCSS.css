@@ -283,7 +283,7 @@ ul.highlight li:hover span.text {
   margin-top: 15px;
   transition: none;
 }
-@media only screen and (max-width : 400px) {
+@media only screen and (max-width : 475px) {
   header {
   background: white;
   height: 60px;
