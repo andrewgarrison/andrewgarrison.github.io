@@ -219,7 +219,7 @@ img {
   transition: none;
 }
 }
-@media only screen and (max-width : 550px) {
+@media only screen and (max-width : 600px) {
   header {
   background: white;
   height: 60px;
