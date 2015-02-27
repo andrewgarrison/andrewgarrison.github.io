@@ -237,6 +237,17 @@ a {
   position: fixed;
   padding: none;
 }
+.close {
+  border: 1px solid black;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  height: 25px;
+  background-color: transparent;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
 
 #navOpacity {
   padding: 8px;
