@@ -139,7 +139,7 @@ a {
 .content {
   position: relative;
   height: 300px;
-  top: 640px;
+  top: 665px;
   background-color: black;
   opacity: 0.7;
   width: 100%
@@ -1036,7 +1036,7 @@ a {
   color: white;
   position: relative;
   top: 5px;
-  padding: 35px;
+  padding: 36px;
   right: 0px;
   -webkit-transition: none;
   -moz-transition: none;
@@ -1080,8 +1080,7 @@ a {
   border-radius: 5px;
   margin-left: 7.5%;
   position: relative;
-  opacity: 0.7;
-  background-color: black;
+  opacity: 1;
   margin-bottom: 75px;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -1094,7 +1093,7 @@ a {
   margin-left: 7.5%;
   position: relative;
   opacity: 1;
-  background-color: black;
+  background-color: rgba(0,0,0,0.7);
   margin-bottom: 75px;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -1104,23 +1103,22 @@ a {
 #hobby4 p {
   width: 700px;
   color: white;
-  display: table-cell;
-  vertical-align: middle;
   position: relative;
-  top: 10px;
-  right: 15%;
-  -webkit-transition: all 500ms ease-out;
-  -moz-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-  opacity: 0;
+  top: 5px;
+  padding: 23px;
+  right: 0px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  opacity: 1;
   font-family: sans-serif, helvetica;
-  font-size: 16px;
+  font-size: 13px;
 
 }
 #hobby4:hover p {
-  -moz-transform: translateY(30px);
-  -webkit-transform: translateY(30px);
-  transform: translateY(30px);
+  -moz-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
   opacity: 1;
 }
 #hobby4 h1 {
@@ -1145,15 +1143,14 @@ a {
   opacity: 0;
 }
 #hobby5 {
-  height: 200px;
+  height: 15%;
   width: 85%;
-  margin-left: 7.5%;
-  position: relative;
-  opacity: 0.7;
   background-color: rgba(0,0,0,0.7);
   border: 2px solid black;
   border-radius: 5px;
-  background-color: black;
+  margin-left: 7.5%;
+  position: relative;
+  opacity: 1;
   margin-bottom: 75px;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -1161,12 +1158,12 @@ a {
   transition: opacity 500ms;
 }
 #hobby5:hover {
-  height: 200px;
+  height: 15%;
   width: 85%;
   margin-left: 7.5%;
   position: relative;
   opacity: 1;
-  background-color: black;
+  background-color: rgba(0,0,0,0.7);
   margin-bottom: 75px;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -1176,23 +1173,21 @@ a {
 #hobby5 p {
   width: 700px;
   color: white;
-  display: table-cell;
-  vertical-align: middle;
   position: relative;
-  top: 10px;
-  right: 8%;
-  -webkit-transition: all 500ms ease-out;
-  -moz-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-  opacity: 0;
+  top: 5px;
+  padding: 30px;
+  right: 0px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  opacity: 1;
   font-family: sans-serif, helvetica;
-  font-size: 16px;
-
+  font-size: 13px;
 }
 #hobby5:hover p {
-  -moz-transform: translateY(40px);
-  -webkit-transform: translateY(40px);
-  transform: translateY(40px);
+  -moz-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
   opacity: 1;
 }
 #hobby5 h1 {
@@ -1217,54 +1212,52 @@ a {
   opacity: 0;
 }
 #hobby6 {
-  height: 200px;
+  height: 15%;
   width: 85%;
   margin-left: 7.5%;
   position: relative;
   background-color: rgba(0,0,0,0.7);
   border: 2px solid black;
   border-radius: 5px;
-  opacity: 0.7;
-  background-color: black;
+  opacity: 1;
   margin-bottom: 75px;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 #hobby6:hover {
-  height: 200px;
+  height: 15%;
   width: 85%;
   margin-left: 7.5%;
   position: relative;
   opacity: 1;
-  background-color: black;
+  background-color: rgba(0,0,0,0.7);
   margin-bottom: 75px;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 #hobby6 p {
-  width: 90%;
+  width: 100%;
   color: white;
-  display: table-cell;
-  vertical-align: middle;
   position: relative;
   top: 10px;
-  right: 7.5%;
+  left: 15px;
+  padding: 19px;
   -webkit-transition: all 500ms ease-out;
   -moz-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
-  opacity: 0;
+  opacity: 1;
   font-family: sans-serif, helvetica;
-  font-size: 16px;
+  font-size: 13px;
 
 }
 #hobby6:hover p {
-  -moz-transform: translateY(30px);
-  -webkit-transform: translateY(30px);
-  transform: translateY(30px);
+  -moz-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
   opacity: 1;
 }
 #hobby6 h1 {
