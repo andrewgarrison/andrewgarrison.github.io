@@ -628,4 +628,11 @@ a {
 #scratch {
 	display: none;
 }
+#content3p {
+	top: 150px;
+}
+#topStrength h2 {
+	top: 150px;
+	position: relative;
+}
   }
