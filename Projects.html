@@ -8,8 +8,8 @@
   <link href ="WebProject.css" rel="stylesheet">
   <link href="css/hover.css" rel="stylesheet" media="all">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Abel|Dosis:300,400,700' rel='stylesheet' type='text/css'>
-<title>
-  <link rel="icon" type="image/png" href="Images/Favicon.png">
+<link rel="icon" type="image/png" href="Images/Favicon.png">
+  <title>
   Projects
 </title>
 </head>
@@ -20,6 +20,9 @@
 <nav>
 <div id = "header-content">
         <a id="return" href="index.html"> Andrew Garrison </a> 
+		<a id="return1" href="index.html"><img src="Images/home-icon.png"></a> 
+		<a id="mobileNav"><img src="Images/mobileNav.jpeg"></a>
+		<h5 id="webTitle">Andrew Garrison</h5>
         <div id="nav">
 	<ul>
 		<li id="bye1"><a id="blue" href="About.html">About</a></li>
@@ -34,7 +37,7 @@
 <script>
 $(document).ready(function() {
     // trigger the function when clicking on an assigned element
-    $("#menu-icon").click(function() {
+    $("#menu-icon, #mobileNav").click(function() {
       $("#nav").toggle("25ms");
     });
 $(window).resize(function(){
@@ -75,6 +78,7 @@ $(window).resize(function(){
      <h3>Go check out the Scratch website and create your own game!<h3>
       <br>
       <a href="http://scratch.mit.edu/" target="_blank"><img class="scratch" src="http://cdn.scratch.mit.edu/scratchr2/static/__1fc3293a2b98046d270d9940b9ead8be__//images/cat-b.png" height="100px" width="100px"></a></img>
+		<a href="http://scratch.mit.edu/" target="_blank"><button id="btnScratch"> Scratch's Website </button></a>
   </div>
   <div class="P2">
     <h1 id="head"> This Website </h1>
