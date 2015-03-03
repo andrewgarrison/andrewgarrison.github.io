@@ -214,7 +214,7 @@ a {
 }
 .P2 {
   top: 1048px;
-  height: 800px;
+  height: 1100px;
   background-image: url("Images/PowderBlack.jpg");
   position: relative;
   width: 100%;
@@ -238,7 +238,7 @@ a {
 .bottomHeader {
   height: 75px;
   position: relative;
-  top: 1000px;
+  top: 1040px;
   width: 100%;
   background: white;
 }
@@ -251,7 +251,15 @@ a {
   top: 50%;
 }
 /*MAIN*/
-
+#codePic {
+  position: relative;
+  height: 600px;
+  width: 500px;
+  top: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0px;
+}
 
 
 #menu-icon {
@@ -272,6 +280,15 @@ img {
 /*MEDIA QUERY*/
 @media only screen and (max-width : 1065px) {
 
+#codePic {
+  position: relative;
+  height: 52%;
+  width: 52%;
+  top: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0px;
+}
 
 	#menu-icon {
     top: 5px;
@@ -345,7 +362,16 @@ img {
   top: 0px;
   border-bottom: 1px solid grey;
 }
-
+#codePic {
+  position: relative;
+  height: 52%;
+  width: 52%;
+  top: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0px;
+  display: none;
+}
 #webTitle {
   font-family: 'Abel', sans-serif;
   font-size: 24px;
@@ -558,11 +584,20 @@ a {
 	-o-transition: 400ms ease-out;
   }
   .bottomHeader {
-	display: none;
+	display: block;
 	height: 0px;
 	top: 0px;
-	width: 0px;
+
+	width: 1000px;
   }
+  .bottomHeader h3 {
+  font-family: 'Abel', sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  position: relative;
+  display: none;
+}
   .P2 {
 	top: 940px;
 	position: absolute;
