@@ -53,7 +53,7 @@ $(window).resize(function(){
 </script>
 </header>
 <div id="banner">
-  	<form id="myForm">
+  	<!--<form id="myForm">
 			<h1>Contact Me</h1>
 				<form class="cmxform" id="commentForm" method="post" action="http://formspree.io/agarrison15@ymail.com">
     <p>
@@ -71,9 +71,28 @@ $(window).resize(function(){
     <p>
       <input class="submit" type="submit" value="Submit">
     </p>
+</form>-->
+<form id ="myForm" action="http://formtoemail.com/user_forms.php" method="post" >
+  <h1> Contact Me </h1>
+
+  <input type="hidden" name="user_id" value="RCY03CG3FEM1OSQ6BMN7">
+  <input type="hidden" name="form_id" value="1">
+  <p>
+  <label for="cname">Name</label>
+  <br><input id="name" minlength="2" type="text" name="Name" required>
+</p>
+<p>
+<label for="cemail">E-Mail</label>
+ <br><input id="email" type="text" name="email" required>
+ </p>  
+ <p>
+ <label for="ccomment">Your comment</label>
+<br><textarea id="message" name="Message" required></textarea>
+</p>
+  <input class="submit" type="submit" value="Send">
 </form>
 <script>
-$("#commentForm").validate();
+$("#myForm").validate();
 </script>
 			</div>
 			</div>
