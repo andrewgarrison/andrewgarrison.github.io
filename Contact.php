@@ -1,68 +1,100 @@
-<!DOCTYPE HTML>
-<html>
+<?php
+
+if($_POST["submit"]) {
+    $recipient="agarrison15@ymail.com";
+    $subject="Form to email message";
+    $name=$_POST["name"];
+    $email=$_POST["email"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $name\nEmail: $email\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $name <$email>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-		<meta charset="UTF-8">
-		<title> AG | Contact </title>
-		<link rel="stylesheet" type="text/css" href="ContactCSS.css">
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-		<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$("#contactform").validate({
-				rules: {
-					name: {
-						required: true,
-						minlength: 2
-					},
-					email: {
-						required: true,
-						email: true
-					},
-					message: {
-						required: true,
-						minlength: 20
-					}
-				},
-				messages: {
-					name: {
-						required: "Please Enter Your Name",
-						minlength: "Your name seems a little too short"
-					},
-					email: {
-						required: "Please Enter Email Address"
-						email: "Please enter a valid email address"
-					},
-					message: {
-						required: "Please Enter Your Message"
-						minlength: "This message is a bit too short. Enter at least 20 characters"
-					}
-				}
-			});
-		});
-		</script>
-	</head>
-	<body>
-		<div class="container">
-			<header>
-    <div id = "header-content">
-        <a id="return" href="file:///Users/Andrew/Desktop/Codes/My%20Website/MyWebsite.html"> Andrew Garrison </a>
-    <div id="nav">
-      <ul>
-        <li><a href="">Contact</a></li>
-        <li><a href="#home">About</a></li>
-        <li><a href="#news">Resume</a></li>
-        <li><a href="#contact">Projects</a></li>
-        <li><a href="file:///Users/Andrew/Desktop/Codes/My%20Website/Blog.html">Blog</a></li>
-      </ul>
-    </div>
-    </div>
-  </header>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="Contact.js"></script>
+  <link href ="ContactCSS.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Abel|Dosis:300,400,700' rel='stylesheet' type='text/css'>
+		<title> Contact </title>
+<link rel="icon" type="image/png" href="Images/Favicon.png">
+</head>
+<body>
+		<header>
+<a id="menu-icon"><img id="navOpacity" src="Images/NavIcon.png"></a>
+<nav>
+<div id = "header-content">
+        <a id="return1" href="index.html"><img src="Images/home-icon.png"></a> 
+    <a id="mobileNav"><img src="Images/mobileNav.jpeg"></a>
+        <a id="return" href="index.html"> Andrew Garrison </a> 
+        <h5 id="webTitle">Andrew Garrison</h5>
+        <div id="nav">
+  <ul>
+    <li><a id="blue" href="About.html">About</a></li>
+    <li><a id="green" href="Projects.html">Projects</a></li>
+    <li><a id="orange" href="Blog.html">Blog</a></li>
+    <li><a id="yellow" href="Resume.html">Resume</a></li>
+    <li><a id="grey" href="Contact.html" class="current">Contact</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+<script>
+$(document).ready(function() {
+    // trigger the function when clicking on an assigned element
+    $("#menu-icon, #mobileNav").click(function() {
+      $("#nav").toggle("25ms");
+    });
+$(window).resize(function(){
+
+       if ($(window).width() >= 1055) {  
+
+          $("#nav").show();
+
+       } else {
+        
+          $("#nav").hide();
+       
+       }
+});
+});
+</script>
+</header>
+<div id="banner">
+  	<form id="myForm">
 			<h1>Contact Me</h1>
-			
-					<input type="text" name="name" value="<?php echo (isset($name) ? $name : ""); ?>" placeholder="Your Name">
-					<input type="email" name="email" value="<?php echo (isset($email) ? $email : ""); ?>" placeholder="Your Email">
-					<textarea name="message" placeholder="Your Message"><?php echo (isset($message) ? $message : ""); ?></textarea>
-				</form>
+				<form class="cmxform" id="commentForm" method="get" action="">
+    <p>
+      <label for="cname">Name</label>
+      <input id="name" name="name" minlength="2" type="text" required>
+    </p>
+    <p>
+      <label for="cemail">E-Mail</label>
+      <input id="email" type="email" name="email" required>
+    </p>
+    <p>
+      <label for="ccomment">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </p>
+    <p>
+      <input class="submit" type="submit" value="Submit">
+    </p>
+</form>
+<?=$thankYou ?>
+<script>
+$("#commentForm").validate();
+</script>
+			</div>
+			</div>
 			</div>
 		</body>
 		</html>
