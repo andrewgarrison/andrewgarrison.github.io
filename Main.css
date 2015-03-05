@@ -71,7 +71,7 @@ li {
   padding: 23px;
   float: left;
   position: relative;
-  bottom: 0px;
+  top: 0px;
 }
 a {
   font-size: 16px;
