@@ -70,7 +70,7 @@ $(window).resize(function(){
 </script>
 </header>
 <div id="banner">
-  	<form id="myForm">
+  	<form id="myForm" method="post" action="Contact.php">
 			<h1>Contact Me</h1>
 				<form class="cmxform" id="commentForm" method="get" action="">
     <p>
