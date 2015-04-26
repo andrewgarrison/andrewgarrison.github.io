@@ -164,7 +164,9 @@ form {
     font-family: 'Abel', sans-serif;
     background: transparent;
     color: black;
-    margin-left: 45%;
+    left: 45%;
+    right: 50px;
+    text-align: center;
     opacity: 1;
     cursor: pointer;
     transition: 250ms ease-out;
@@ -287,7 +289,9 @@ label {
   top: 0px;
   border-bottom: 1px solid grey;
 }
-
+.submit {
+  left: 42%;
+}
 #webTitle {
   font-family: 'Abel', sans-serif;
   font-size: 24px;
@@ -448,4 +452,12 @@ a {
   position: absolute;
   background-size: cover;
 }
+@media only screen and (max-width : 360px) {
+  #webTitile {
+    margin-right: 0px;
+  }
+  .submit {
+    left: 30%;
+  }
 }
+
