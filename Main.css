@@ -56,7 +56,7 @@ header {
   background-color: transparent;
   width: 300px;
   padding: 0px;
-  margin-top: 15px;
+  margin-top: 12px;
   transition: none;
 }
 #nav {
@@ -71,43 +71,44 @@ li {
   padding: 23px;
   float: left;
   position: relative;
-  top: 0px;
+  top: -3px;
 }
 a {
-  font-size: 16px;
-  font-family: sans-serif, 'Abel';
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px;
   color: black;
-  transition: 100ms ease-out;
-  -webkit-transition: 100ms ease-out;
-  -moz-transition: 100ms ease-out;
-  -o-transition: 100ms ease-out;
+  transition: 200ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;
+  -moz-transition: 200ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
 }
 #orange:hover {
-  border-bottom: 4px solid #2FEB67;
+  color: #2FEB67;
 }
 #blue:hover {
-  border-bottom: 4px solid #61C8FF;
+  color: #61C8FF;
 }
 #green:hover  {
-  border-bottom: 4px solid #FFC640;
+  color: #FFC640;
+}
+#purple:hover {
+  color: #7F6887;
 }
 #yellow:hover {
-  border-bottom: 4px solid #FFFB00;
-}
-#grey:hover {
-  border-bottom: 4px solid #7F6887;
+  color: #FFFB00;
 }
 
 #banner {
-  top: 65px;
+  top: 60px;
   width: 100%;
   height: 600px; 
   background-image: url("Images/MeBanner.png");
   position: absolute;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -117,6 +118,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 20px;
   margin-top: 230px;
+  position: relative;
   color: orange;
   text-align: center;
 }
@@ -165,7 +167,7 @@ a {
 }
 
 #content2 h3 {
-  font-family: helvetica;
+  font-family: 'Roboto', Helvetica;
   text-transform: uppercase;
   font-size: 32px;
   padding-top: 160px;
@@ -397,7 +399,7 @@ ul {
 }
 a {
   font-size: 14px;
-  font-family: sans-serif, 'Abel';
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -408,21 +410,7 @@ a {
   -moz-transition: 100ms ease-out;
   -o-transition: 100ms ease-out;
 }
-#orange:hover {
-  border-bottom: 4px solid #2FEB67;
-}
-#blue:hover {
-  border-bottom: 4px solid #61C8FF;
-}
-#green:hover  {
-  border-bottom: 4px solid #FFC640;
-}
-#yellow:hover {
-  border-bottom: 4px solid #FFFB00;
-}
-#grey:hover {
-  border-bottom: 4px solid #7F6887;
-}
+
 
 
 /*MEDIA QUERY*/
@@ -489,6 +477,9 @@ a {
   background-image: url("Images/bannerpic.png");
   position: absolute;
   background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  transform: none;
 }
 
 #banner h2 {
@@ -500,7 +491,6 @@ a {
   color: orange;
   text-align: center;
 }
-
 
 #content {
   background-position: center;
@@ -545,7 +535,7 @@ a {
 }
 
 #content2 h3 {
-  font-family: sans-serif, 'Abel';
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 24px;
   padding-top: 40px;

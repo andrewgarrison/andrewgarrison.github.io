@@ -7,7 +7,7 @@
   <script src="Script.js"></script>
   <link href ="Main.css" rel="stylesheet">
   <link href="css/hover.css" rel="stylesheet" media="all">
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Abel|Dosis:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Abel|Dosis:300,400,700|Roboto' rel='stylesheet' type='text/css'>
   <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link rel="icon" type="image/png" href="Images/Favicon.png">
 <title>
@@ -29,8 +29,8 @@
     <li id="bye1"><a id="blue" href="About.html" class="current">About</a></li>
     <li id="bye2"><a id="green" href="Projects.html">Projects</a></li>
     <li id="bye3"><a id="orange" href="Blog.html">Blog</a></li>
-    <li id="bye4"><a id="yellow" href="Resume.html">Resume</a></li>
-    <li id="bye5"><a id="grey" href="Contact.html">Contact</a></li>
+    <li id="bye4"><a id="purple" href="Resume.html">Resume</a></li>
+    <li id="bye5"><a id="yellow" href="Contact.html">Contact</a></li>
     </ul>
   </div>
 <div>
@@ -47,11 +47,18 @@ $(window).resize(function(){
 
           $("#nav").show();
 
+
        } else {
         
           $("#nav").hide();
        
        }
+});
+$(window).scroll(function() {
+  var wScroll = $(this).scrollTop();
+  $('#banner').css({
+    'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
+  })
 });
 });
 </script>
