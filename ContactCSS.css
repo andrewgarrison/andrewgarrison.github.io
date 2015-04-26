@@ -455,10 +455,14 @@ a {
 @media only screen and (max-width : 360px) {
   #webTitile {
     margin-right: 0px;
-    width: 55%;
+    width: 100%;
   }
   .submit {
-    left: 32%;
+    left: 33%;
+    transition: none;
+  }
+  .submit:hover {
+    transition: none;
   }
 }
 
