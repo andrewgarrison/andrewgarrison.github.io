@@ -454,8 +454,9 @@ a {
 }
 @media only screen and (max-width : 360px) {
   #webTitile {
-    margin-right: 0px;
+    margin-right: 15px;
     width: 100%;
+    left: ;
   }
   .submit {
     left: 33%;
