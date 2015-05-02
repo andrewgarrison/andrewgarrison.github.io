@@ -1,21 +1,3 @@
-@font-face {
-  font-family: 'Ostrich Sans';
-  src: url("WebFonts/ostrich-regular.ttf")
-  local('Ostrich Sans'),
-  format('truetype');
-}
-@font-face {
-  font-family: 'Bebas';
-  src: url("WebFonts/BEBAS.TTF")
-  local('Bebas'),
-  format('truetype');
-}
-@font-face {
-  font-family: 'Modi Thorson';
-  src: url("WebFonts/modithorson.ttf")
-  local('Modi Thorson'),
-  format('truetype');
-}
 body {
   text-align: center;
 }
@@ -62,7 +44,7 @@ header {
   background-color: transparent;
   width: 300px;
   padding: 0px;
-  margin-top: 15px;
+  margin-top: 12px;
   transition: none;
 }
 #nav {
@@ -72,18 +54,18 @@ ul {
   list-style-type: none;
 }
 .current {
-	border-bottom: 4px solid #FFC640;
+	color: #FFC640;
 }
 li {
   display: inline;
   padding: 23px;
   float: left;
   position: relative;
-  top: 0px;
+  top: -3px;
 }
 a {
-  font-size: 16px;
-  font-family: sans-serif, 'Abel';
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -96,32 +78,30 @@ a {
 }
 
 #orange:hover {
-  border-bottom: 4px solid #2FEB67;
+  color: #2FEB67;
 }
 #blue:hover {
-  border-bottom: 4px solid #61C8FF;
+  color: #61C8FF;
 }
 #green:hover  {
-  border-bottom: 4px solid #FFC640;
+  color: #FFC640;
+}
+#purple:hover {
+  color: #7F6887;
 }
 #yellow:hover {
-  border-bottom: 4px solid #FFFB00;
-}
-#grey:hover {
-  border-bottom: 4px solid #7F6887;
-}
-.ui-tabs-active {
-  border-bottom: 4px solid #61C8FF;
+  color: #FFFB00;
 }
 
 #banner {
-  top: 65px;
+  top: 61px;
   width: 100%;
-  height: 600px; 
+  height: 715px; 
   background-image: url("Images/Yosemite.jpg");
   background-size: cover;
   position: absolute;
   box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background-attachment: fixed;
 }
 #btnScratch {
 
@@ -419,7 +399,7 @@ ul {
 }
 a {
   font-size: 14px;
-  font-family: sans-serif, 'Abel';
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -430,20 +410,21 @@ a {
   -moz-transition: 100ms ease-out;
   -o-transition: 100ms ease-out;
 }
+
 #orange:hover {
-  border-bottom: 4px solid #2FEB67;
+  color: #2FEB67;
 }
 #blue:hover {
-  border-bottom: 4px solid #61C8FF;
+  color: #61C8FF;
 }
 #green:hover  {
-  border-bottom: 4px solid #FFC640;
+  color: #FFC640;
+}
+#purple:hover {
+  color: #7F6887;
 }
 #yellow:hover {
-  border-bottom: 4px solid #FFFB00;
-}
-#grey:hover {
-  border-bottom: 4px solid #7F6887;
+  color: #FFFB00;
 }
 
 
@@ -511,8 +492,9 @@ a {
   #banner {
 	top: 60px;
 	width: 100%;
-	height: 275px; 
+	height: 305px; 
 	position: absolute;
+  background-attachment: none;
 	background-size: cover;
   }
   #banner h2 {
@@ -586,9 +568,8 @@ a {
   .bottomHeader {
 	display: block;
 	height: 0px;
-	top: 0px;
-
-	width: 1000px;
+	width: 0px;
+  background-color: black;
   }
   .bottomHeader h3 {
   font-family: 'Abel', sans-serif;

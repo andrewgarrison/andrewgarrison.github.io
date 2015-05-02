@@ -7,7 +7,7 @@
   <script src="Script.js"></script>
   <link href ="WebProject.css" rel="stylesheet">
   <link href="css/hover.css" rel="stylesheet" media="all">
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Abel|Dosis:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Abel|Dosis:300,400,700|Roboto' rel='stylesheet' type='text/css'>
 <link rel="icon" type="image/png" href="Images/Favicon.png">
   <title>
   Projects
@@ -28,11 +28,11 @@
 		<h5 id="webTitle">Andrew Garrison</h5>
         <div id="nav">
 	<ul>
-		<li><a id="blue" href="About.html">About</a></li>
-		<li><a id="green" href="Projects.html" class="current">Projects</a></li>
-		<li><a id="orange" href="Blog.html">Blog</a></li>
-		<li><a id="yellow" href="Resume.html">Resume</a></li>
-		<li><a id="grey" href="Contact.html">Contact</a></li>
+		  <li><a id="blue" href="About.html">About</a></li>
+    <li><a id="green" href="Projects.html" class="current">Projects</a></li>
+    <li><a id="orange" href="Blog.html">Blog</a></li>
+    <li><a id="purple" href="Resume.html">Resume</a></li>
+    <li><a id="yellow" href="Contact.html">Contact</a></li>
   	</ul>
 	</div>
 <div>
@@ -57,6 +57,12 @@ $(window).resize(function(){
           $("#nav").hide();
        
        }
+});
+$(window).scroll(function() {
+  var wScroll = $(this).scrollTop();
+  $('#banner').css({
+    'transform' : 'translate(0px, -'+ wScroll /35 +'%)'
+  })
 });
 });
 </script>
