@@ -567,7 +567,7 @@ a {
   }
   .desc {
 	height: 200px;
-	top: 105px;
+	top: 75px;
   }	
   .desc p {
 	font-size: 14px;
@@ -595,6 +595,9 @@ a {
   }
   #liveCode {
     display: none;
+  }
+  #chanceSite {
+    max-width: 85%;
   }
   .P1desc p {
 	bottom: 850px;
