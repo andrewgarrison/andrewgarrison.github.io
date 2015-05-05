@@ -124,7 +124,6 @@ a {
   background: white;
   position: relative;
   top: 400px;
-  border-bottom: 1px solid black;
 }
 .projectChance h1 {
   font-size: 50px;
@@ -665,3 +664,30 @@ a {
   .P2 p {
 	font-size: 14px;
   }
+  .projectChance button {
+  padding: 5px;
+  background: #FFC640;
+  border: 1px solid #FFC640;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  position: relative;
+  top: 55px;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0;
+  transform: scale(1);
+  transition: 200ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;
+  -ms-transition: 200ms ease-in-out;
+  -moz-transition: 200ms ease-in-out;
+}
+.projectChance button:hover {
+  transform: scale(0.98);
+  transition: 200ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;
+  -ms-transition: 200ms ease-in-out;
+  -moz-transition: 200ms ease-in-out;
+  background: #FFAE00;
+}
