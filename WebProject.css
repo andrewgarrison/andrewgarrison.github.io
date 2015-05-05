@@ -577,14 +577,17 @@ a {
 	font-size: 36px;
 	bottom: 30px;
 	position: relative;
+  color: white;
   }
   .P1 {
 	height: 420px;
-	top: 1020px;
+	top: 1060px;
 	background-size: cover;
+  background-image: none;
+  background-color: #1C1C1C;
   }
   .projectChance {
-    height: 520px;
+    height: 600px;
     top: 60px;
   }
   .projectChance h1 {
@@ -600,12 +603,12 @@ a {
     max-width: 85%;
   }
   .P1desc p {
-	bottom: 850px;
+	bottom: 880px;
 	position: relative;
 	font-size: 14px;
   }
   .P1desc h3 {
-	bottom: 850px;
+	bottom: 880px;
 	position: relative;
 	font-size: 15px;
   }
@@ -660,12 +663,16 @@ a {
 	top: 1440px;
 	position: absolute;
 	height: 500px;
+  background-image: none;
+  background-color: white;
   }
   #head {
 	font-size: 36px;
+  color: black;
   }
   .P2 p {
 	font-size: 14px;
+  color: black;
   }
   .projectChance button {
   padding: 5px;
