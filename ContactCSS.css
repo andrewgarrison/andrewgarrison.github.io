@@ -1,7 +1,7 @@
 body {
-  
+
   background-repeat: no-repeat;
-  
+
 }
 *
 {
@@ -21,7 +21,7 @@ body {
 #banner {
   top: 60px;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   background-repeat: no-repeat;
   background-image: url("Images/ContactBG.jpeg");
   position: absolute;
@@ -38,12 +38,12 @@ header {
   position: fixed;
   box-shadow: 0 10px 15px rgba(0,0,0,0.3);
   top: 0px;
-  
+
 }
 #header-content {
   width: 100%; margin: 0 auto; padding: 5px 0 0 0;
   overflow: hidden;
-  
+
 }
 #container {
   margin-top: 230px;
@@ -140,7 +140,7 @@ form {
     padding: 5px;
     font-family: 'Abel', sans-serif;
     font-size: 18px;
-    border: 1px solid black;	
+    border: 1px solid black;
   }
   #message {
     height: 180px;
@@ -241,8 +241,8 @@ label {
     -moz-transition: 200ms ease-out;
     -o-transition: 200ms ease-out;
   }
-  
-  nav ul, nav:active ul { 
+
+  nav ul, nav:active ul {
 
     position: fixed;
     padding: 20px;
@@ -306,7 +306,7 @@ label {
 #header-content {
   width: 100%; margin: 0 auto; padding: 5px 0 0 0;
   overflow: hidden;
-  
+
 }
 #container {
   margin-top: 230px;
@@ -401,8 +401,8 @@ a {
     -moz-transition: 200ms ease-out;
     -o-transition: 200ms ease-out;
   }
-  
-  nav ul, nav:active ul { 
+
+  nav ul, nav:active ul {
 
     position: absolute;
     padding: 20px;
@@ -445,7 +445,7 @@ a {
   #banner {
   top: 61px;
   width: 100%;
-  height: 600px; 
+  height: 600px;
   background-repeat: no-repeat;
   background-image: url("Images/ContactBG.jpeg");
   background-color: transparent;
@@ -466,4 +466,3 @@ a {
     transition: none;
   }
 }
-

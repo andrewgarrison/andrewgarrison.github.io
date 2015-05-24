@@ -16,9 +16,9 @@
 <a id="menu-icon"><img id="navOpacity" src="Images/NavIcon.png"></a>
 <nav>
 <div id = "header-content">
-        <a id="return1" href="index.html"><img src="Images/home-icon.png"></a> 
+        <a id="return1" href="index.html"><img src="Images/home-icon.png"></a>
     <a id="mobileNav"><img src="Images/mobileNav.jpeg"></a>
-        <a id="return" href="index.html"> Andrew Garrison </a> 
+        <a id="return" href="index.html"> Andrew Garrison </a>
         <h5 id="webTitle">Andrew Garrison</h5>
         <div id="nav">
   <ul>
@@ -39,14 +39,14 @@ $(document).ready(function() {
     });
 $(window).resize(function(){
 
-       if ($(window).width() >= 1055) {  
+       if ($(window).width() >= 1055) {
 
           $("#nav").show();
 
        } else {
-        
+
           $("#nav").hide();
-       
+
        }
 });
 });
@@ -54,7 +54,7 @@ $(window).resize(function(){
 </header>
 <div id="banner">
 <!--CONTACT FORM WITH CLOUD HOSTED PHP-->
-<form id ="myForm" action="http://formtoemail.com/user_forms.php" method="post" >
+<!--<form id ="myForm" action="http://formtoemail.com/user_forms.php" method="post" >
   <h1> Contact Me </h1>
 
   <input type="hidden" name="user_id" value="RCY03CG3FEM1OSQ6BMN7">
@@ -66,12 +66,18 @@ $(window).resize(function(){
 <p>
 <label for="cemail">E-Mail</label>
  <br><input id="email" type="email" name="email" required>
- </p>  
+ </p>
  <p>
  <label for="ccomment">Your comment</label>
 <br><textarea id="message" name="Message" required></textarea>
 </p>
   <input class="submit" type="submit" value="Send">
+</form>-->
+<form id="myForm" action="//formspree.io/agarrison15@ymail.com"
+      method="POST">
+    <input type="text" id="name" name="name">
+    <input type="email" id="email" name="_replyto">
+    <input type="submit" value="Send">
 </form>
 <script>
 $("#myForm").validate();

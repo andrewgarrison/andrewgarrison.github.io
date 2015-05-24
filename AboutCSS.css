@@ -1,15 +1,3 @@
-@font-face {
-  font-family: 'Ostrich Sans';
-  src: url("WebFonts/ostrich-regular.ttf")
-  local('Ostrich Sans'),
-  format('truetype');
-}
-@font-face {
-  font-family: 'Bebas';
-  src: url("WebFonts/BEBAS.TTF")
-  local('Bebas'),
-  format('truetype');
-}
 *
 {
     margin : 0;
