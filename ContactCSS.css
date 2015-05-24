@@ -154,7 +154,7 @@ form {
     margin-left: 0%;
     border: 1px solid black;
   }
-  .submit {
+  #submit {
     padding: 5px;
     border: 2px solid black;
     padding-right: 15px;
@@ -174,7 +174,7 @@ form {
     -moz-transition: 250ms ease-out;
     -o-transition: 250ms ease-out;
   }
-  .submit:hover {
+  #submit:hover {
     padding: 5px;
     border: 2px solid black;
     padding-right: 15px;

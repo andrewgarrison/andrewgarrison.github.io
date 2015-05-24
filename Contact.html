@@ -53,31 +53,13 @@ $(window).resize(function(){
 </script>
 </header>
 <div id="banner">
-<!--CONTACT FORM WITH CLOUD HOSTED PHP-->
-<!--<form id ="myForm" action="http://formtoemail.com/user_forms.php" method="post" >
-  <h1> Contact Me </h1>
 
-  <input type="hidden" name="user_id" value="RCY03CG3FEM1OSQ6BMN7">
-  <input type="hidden" name="form_id" value="1">
-  <p>
-  <label for="cname">Name</label>
-  <br><input id="name" minlength="2" type="text" name="Name" required>
-</p>
-<p>
-<label for="cemail">E-Mail</label>
- <br><input id="email" type="email" name="email" required>
- </p>
- <p>
- <label for="ccomment">Your comment</label>
-<br><textarea id="message" name="Message" required></textarea>
-</p>
-  <input class="submit" type="submit" value="Send">
-</form>-->
 <form id="myForm" action="//formspree.io/agarrison15@ymail.com"
       method="POST">
-    <input type="text" id="name" name="name">
-    <input type="email" id="email" name="_replyto">
-    <input type="submit" value="Send">
+    <input type="text" id="name" name="name" placeholder="NAME">
+    <input type="email" id="email" name="_replyto" placeholder="EMAIL">
+    <textarea placeholder="MESSAGE" id="message"> </textarea> 
+    <input type="submit" id="submit" value="Send">
 </form>
 <script>
 $("#myForm").validate();
