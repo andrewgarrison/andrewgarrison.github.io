@@ -77,47 +77,47 @@ ul {
   list-style-type: none;
 }
 .current {
-	border-bottom: 4px solid #61C8FF;
+	color: #61C8FF;
 }
 li {
   display: inline;
   padding: 23px;
   float: left;
   position: relative;
-  top: 0px;
+  top: -3px;
 }
 a {
-  font-size: 16px;
-  font-family: sans-serif, 'Abel';
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px;
   color: black;
-  transition: 100ms ease-out;
-  -webkit-transition: 100ms ease-out;
-  -moz-transition: 100ms ease-out;
-  -o-transition: 100ms ease-out;
+  transition: 200ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;
+  -moz-transition: 200ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
 }
 
 #orange:hover {
-  border-bottom: 4px solid #2FEB67;
+  color: #2FEB67;
 }
 #blue:hover {
-  border-bottom: 4px solid #61C8FF;
+  color: #61C8FF;
 }
 #green:hover  {
-  border-bottom: 4px solid #FFC640;
+  color: #FFC640;
+}
+#purple:hover {
+  color: #7F6887;
 }
 #yellow:hover {
-  border-bottom: 4px solid #FFFB00;
-}
-#grey:hover {
-  border-bottom: 4px solid #7F6887;
+  color: #FFFB00;
 }
 
 #banner {
-  top: 65px;
+  top: 61px;
   width: 100%;
   max-width: auto;
   max-height: auto;
@@ -734,7 +734,7 @@ ul {
 }
 a {
   font-size: 14px;
-  font-family: sans-serif, 'Abel';
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -746,19 +746,19 @@ a {
   -o-transition: 100ms ease-out;
 }
 #orange:hover {
-  border-bottom: 4px solid #2FEB67;
+  color: #2FEB67;
 }
 #blue:hover {
-  border-bottom: 4px solid #61C8FF;
+  color: #61C8FF;
 }
 #green:hover  {
-  border-bottom: 4px solid #FFC640;
+  color: #FFC640;
+}
+#purple:hover {
+  color: #7F6887;
 }
 #yellow:hover {
-  border-bottom: 4px solid #FFFB00;
-}
-#grey:hover {
-  border-bottom: 4px solid #7F6887;
+  color: #FFFB00;
 }
 
 
@@ -769,7 +769,7 @@ a {
   #mobileNav {
     position: relative;
     display: block;
-    bottom: 40px;
+    bottom: 34px;
     cursor: pointer;
     left: 0px;
     float: right;
@@ -779,8 +779,8 @@ a {
     display: none;
   }
   #mobileNav img {
-    height: 35px;
-    width: 45px;
+    height: 25px;
+    width: 30px;
     opacity: 1;
     transition: 200ms ease-out;
     -webkit-transition: 200ms ease-out;

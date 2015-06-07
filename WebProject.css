@@ -496,10 +496,10 @@ a {
   #mobileNav {
     position: relative;
     display: block;
-    bottom: 22px;
+    bottom: 16px;
     cursor: pointer;
     padding-left: 1px;
-	left: 8px;
+	  left: 8px;
     float: right;
     z-index: 1000;
   }
@@ -507,8 +507,8 @@ a {
     display: none;
   }
   #mobileNav img {
-    height: 35px;
-    width: 45px;
+    height: 25px;
+    width: 30px;
     opacity: 1;
     transition: 200ms ease-out;
     -webkit-transition: 200ms ease-out;

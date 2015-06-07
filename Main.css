@@ -420,7 +420,7 @@ a {
   #mobileNav {
     position: relative;
     display: block;
-    bottom: 14px;
+    bottom: 8px;
     cursor: pointer;
     padding-left: 1px;
     float: right;
@@ -430,8 +430,8 @@ a {
     display: none;
   }
   #mobileNav img {
-    height: 35px;
-    width: 45px;
+    height: 25px;
+    width: 30px;
     opacity: 1;
     transition: 200ms ease-out;
     -webkit-transition: 200ms ease-out;

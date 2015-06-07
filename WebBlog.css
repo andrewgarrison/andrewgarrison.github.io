@@ -73,40 +73,40 @@ li {
   padding: 23px;
   float: left;
   position: relative;
-  top: 0px;
+  top: -3px;
 }
 a {
-  font-size: 16px;
-  font-family: sans-serif, 'Abel';
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px;
   color: black;
-  transition: 100ms ease-out;
-  -webkit-transition: 100ms ease-out;
-  -moz-transition: 100ms ease-out;
-  -o-transition: 100ms ease-out;
+  transition: 200ms ease-out;
+  -webkit-transition: 200ms ease-out;
+  -moz-transition: 200ms ease-out;
+  -o-transition: 200ms ease-out;
 }
 
 #orange:hover {
-  border-bottom: 4px solid #2FEB67;
+  color: #2FEB67;
 }
 #blue:hover {
-  border-bottom: 4px solid #61C8FF;
+  color: #61C8FF;
 }
 #green:hover  {
-  border-bottom: 4px solid #FFC640;
+  color: #FFC640;
+}
+#purple:hover {
+  color: #7F6887;
 }
 #yellow:hover {
-  border-bottom: 4px solid #FFFB00;
-}
-#grey:hover {
-  border-bottom: 4px solid #7F6887;
+  color: #FFFB00;
 }
 
 #banner {
-  top: 65px;
+  top: 61px;
   width: 100%;
   height: 100%; 
   background-image: url("Images/Blog_Pic.jpg");
@@ -494,7 +494,7 @@ ul {
 }
 a {
   font-size: 14px;
-  font-family: sans-serif, 'Abel';
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -506,19 +506,19 @@ a {
   -o-transition: 100ms ease-out;
 }
 #orange:hover {
-  border-bottom: 4px solid #2FEB67;
+  color: #2FEB67;
 }
 #blue:hover {
-  border-bottom: 4px solid #61C8FF;
+  color: #61C8FF;
 }
 #green:hover  {
-  border-bottom: 4px solid #FFC640;
+  color: #FFC640;
+}
+#purple:hover {
+  color: #7F6887;
 }
 #yellow:hover {
-  border-bottom: 4px solid #FFFB00;
-}
-#grey:hover {
-  border-bottom: 4px solid #7F6887;
+  color: #FFFB00;
 }
 
 
@@ -529,9 +529,9 @@ a {
   #mobileNav {
     position: relative;
     display: block;
-    bottom: 22px;
+    bottom: 16px;
     cursor: pointer;
-	left: 8px;
+	  left: 8px;
     padding-left: 1px;
     float: right;
     z-index: 1000;
@@ -540,8 +540,8 @@ a {
     display: none;
   }
   #mobileNav img {
-    height: 35px;
-    width: 45px;
+    height: 25px;
+    width: 30px;
     opacity: 1;
     transition: 200ms ease-out;
     -webkit-transition: 200ms ease-out;
